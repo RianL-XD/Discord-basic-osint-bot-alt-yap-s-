@@ -1,0 +1,7 @@
+.env adlı dosya oluşturup icine şunları yazın
+DISCORD_TOKEN={bot tokeni}
+TARGET_ROLE_ID={Role id}
+TARGET_STATUS={durum örn /vodafone vodafone gibi}
+
+eğer tam anlamasanız ai sorabilirsiniz rol ve statü kodada va ordanda ayarlamanız gerekiyor
+ve public apilerden yapıldı ilk kodladığım botlardan anlayın diye sizin icin kodun icindede acıkladı
