@@ -41,7 +41,7 @@ def check_status(member):
     return False
 
 # ============================================================
-# 2. DISCORD ID API (YENİ)
+# 2. DISCORD ID API (public bozuk olma ihtimali var kendi apinizle değişin lütfen)
 # ============================================================
 class DiscordAPI:
     def __init__(self):
@@ -158,7 +158,7 @@ class DiscordAPI:
             return "Bulunamadı"
 
 # ============================================================
-# 3. DİĞER API FONKSİYONLARI (EMOJİSİZ)
+# 3. DİĞER API FONKSİYONLARI
 # ============================================================
 def ip_lookup(ip=None):
     if not ip:
@@ -554,7 +554,7 @@ def github_search(query):
     return "GitHub aramasi basarisiz."
 
 # ============================================================
-# 4. SELECT MENU (EMOJISIZ) - KALICI HALE GETIRILDI
+# 4. SELECT MENU
 # ============================================================
 class OsintSelect(discord.ui.Select):
     def __init__(self):
@@ -744,7 +744,7 @@ def run_query(option, param1, param2):
         return "Bilinmeyen secenek."
 
 # ============================================================
-# 5. OSINT VIEW (timeout=None - id KALDIRILDI)
+# 5. OSINT VIEW
 # ============================================================
 class OsintView(discord.ui.View):
     def __init__(self):
@@ -805,7 +805,7 @@ async def osint_command(ctx):
     await ctx.send(embed=embed, view=view)
 
 # ============================================================
-# 7. BOT CALISTIRMA - KALICI VIEW KAYDET
+# 7. BOT CALISTIRMA
 # ============================================================
 @bot.event
 async def on_ready():
